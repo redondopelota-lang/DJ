@@ -383,10 +383,11 @@ export const djContent: DJContent = {
     ],
     documents: [
       {
-        label: 'Pack fotos oficiales ZIP',
-        description: 'Descarga en un solo archivo las 10 fotos oficiales de estudio listas para enviar o reutilizar.',
-        file: '/media/presskit/Alvaro_Redon_Fotos_Oficiales.zip',
-        download: true,
+        label: 'Pack fotos oficiales en Drive',
+        description:
+          'Haz click para abrir el Drive público y acceder al pack completo de fotos oficiales en alta calidad.',
+        file: 'https://drive.google.com/drive/u/0/folders/1_e9oM66gpElrGsQTEXbzZewqZtqVIrFs',
+        download: false,
       },
       {
         label: 'Presskit 2026',
