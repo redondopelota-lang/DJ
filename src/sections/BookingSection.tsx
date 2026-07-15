@@ -14,6 +14,7 @@ export function BookingSection({ contact, socialLinks }: BookingSectionProps) {
   const whatsappUrl = contact.whatsapp
     ? `https://wa.me/${contact.whatsapp.replace(/\D/g, '')}`
     : null
+  const primaryIsWhatsapp = contact.primaryAction.platform === 'whatsapp'
 
   return (
     <section id="booking" className="content-section content-section--last">
@@ -24,7 +25,14 @@ export function BookingSection({ contact, socialLinks }: BookingSectionProps) {
           <p>{contact.body}</p>
           <div className="booking-section__actions">
             <ButtonLink action={contact.primaryAction} />
-            {whatsappUrl ? (
+            {primaryIsWhatsapp ? (
+              <a
+                className="button-link button-link--secondary"
+                href={`mailto:${contact.bookingEmail}?subject=Booking%20%C3%81lvaro%20Redon`}
+              >
+                Enviar email
+              </a>
+            ) : whatsappUrl ? (
               <a
                 className="button-link button-link--secondary"
                 href={whatsappUrl}

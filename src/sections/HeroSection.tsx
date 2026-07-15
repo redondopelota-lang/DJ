@@ -25,6 +25,9 @@ export function HeroSection({
   const { scrollYProgress } = useScroll()
   const backgroundY = useTransform(scrollYProgress, [0, 1], [0, reducedMotion ? 0 : 180])
   const backgroundScale = useTransform(scrollYProgress, [0, 1], [1, reducedMotion ? 1 : 1.12])
+  const heroSocialLinks = socialLinks.filter((link) =>
+    ['instagram', 'soundcloud', 'spotify', 'whatsapp'].includes(link.platform),
+  )
 
   return (
     <section id="home" className="hero-section">
@@ -100,7 +103,7 @@ export function HeroSection({
               </div>
             ))}
           </div>
-          <SocialLinks links={socialLinks.slice(0, 3)} compact />
+          <SocialLinks links={heroSocialLinks} compact />
         </motion.div>
       </div>
 

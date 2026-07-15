@@ -20,7 +20,7 @@ export function MusicSection({ intro, sessions }: MusicSectionProps) {
         <Reveal>
           <SectionHeading
             eyebrow="Sonido"
-            title="Una identidad sonora abierta, urbana y pensada para leer la pista."
+            title="Sesiones, playlists propias y material audiovisual para entender el proyecto completo."
             description={intro}
           />
         </Reveal>
