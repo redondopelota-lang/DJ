@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 
+import { BackgroundAudio } from './components/BackgroundAudio'
 import { Navbar } from './components/Navbar'
 import { djContent } from './data/djContent'
 import { useActiveSection } from './hooks/useActiveSection'
@@ -61,6 +62,10 @@ function App() {
         navItems={djContent.navigation}
         socialLinks={djContent.socialLinks}
         footer={djContent.footer}
+      />
+      <BackgroundAudio
+        src="/media/audio/baila-reggaeton.mp3"
+        title="Baila Reggaeton · Canelita · Antonio Guevara Live Edit"
       />
     </div>
   )
