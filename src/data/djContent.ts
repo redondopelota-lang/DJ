@@ -280,14 +280,54 @@ export const djContent: DJContent = {
       'Todo el material clave de contratación en un mismo bloque: biografía, fotos, branding y documento oficial listo para enviar.',
     officialPhotos: [
       {
-        label: 'Retrato oficial 01',
-        description: 'Fotografía de estudio para prensa, cartelería y material promocional.',
-        file: '/media/branding/alvaro-redon-portrait-01.jpg',
+        label: 'Foto oficial AR_2',
+        description: 'Retrato de estudio en fondo blanco con sudadera azul y pose frontal.',
+        file: '/media/presskit/official/AR_2.jpg',
       },
       {
-        label: 'Retrato oficial 02',
-        description: 'Segunda imagen de retrato lista para uso digital y press.',
-        file: '/media/branding/alvaro-redon-portrait-02.jpg',
+        label: 'Foto oficial AR_3',
+        description: 'Retrato con capucha azul, enfoque editorial y fondo limpio.',
+        file: '/media/presskit/official/AR_3.jpg',
+      },
+      {
+        label: 'Foto oficial AR_5',
+        description: 'Retrato lateral con sudadera azul, listo para promo y presskit.',
+        file: '/media/presskit/official/AR_5.jpg',
+      },
+      {
+        label: 'Foto oficial AR_7',
+        description: 'Retrato en camiseta blanca con pose limpia para material promocional.',
+        file: '/media/presskit/official/AR_7.jpg',
+      },
+      {
+        label: 'Foto oficial AR_15',
+        description: 'Retrato en camiseta negra y gafas, con enfoque streetwear.',
+        file: '/media/presskit/official/AR_15.jpg',
+      },
+      {
+        label: 'Foto oficial AR_16',
+        description: 'Retrato frontal con gafas oscuras para promos y creatividades.',
+        file: '/media/presskit/official/AR_16.jpg',
+      },
+      {
+        label: 'Foto oficial AR_21',
+        description: 'Plano de espalda con camiseta negra y pose editorial.',
+        file: '/media/presskit/official/AR_21.jpg',
+      },
+      {
+        label: 'Foto oficial AR_23',
+        description: 'Retrato con fondo negro y contraste fuerte para visuales potentes.',
+        file: '/media/presskit/official/AR_23.jpg',
+      },
+      {
+        label: 'Foto oficial AR_24',
+        description: 'Perfil con luz roja y fondo oscuro para identidad escénica.',
+        file: '/media/presskit/official/AR_24.jpg',
+      },
+      {
+        label: 'Foto oficial AR_25',
+        description: 'Primer plano con luz roja, ideal para portada y branding visual.',
+        file: '/media/presskit/official/AR_25.jpg',
       },
     ],
     logos: [
