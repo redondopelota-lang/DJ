@@ -1020,6 +1020,47 @@
   text-align: left;
 }
 
+.audio-prompt {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(6, 6, 9, 0.52);
+  backdrop-filter: blur(10px);
+}
+
+.audio-prompt__panel {
+  width: min(32rem, calc(100vw - 2rem));
+  padding: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at top right, rgba(255, 42, 79, 0.18), transparent 34%),
+    rgba(10, 10, 14, 0.94);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+}
+
+.audio-prompt__panel h3 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 0.95;
+}
+
+.audio-prompt__panel p:last-of-type {
+  margin-bottom: 0;
+  color: var(--text-muted);
+}
+
+.audio-prompt__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
 .background-audio.is-playing {
   border-color: rgba(255, 42, 79, 0.35);
 }
@@ -1218,6 +1259,14 @@
     bottom: 0.75rem;
     min-width: calc(100vw - 1.5rem);
     max-width: calc(100vw - 1.5rem);
+  }
+
+  .audio-prompt__actions {
+    align-items: stretch;
+  }
+
+  .audio-prompt__actions .button-link {
+    width: 100%;
   }
 
   .gallery-masonry {

@@ -63,7 +63,6 @@ export const djContent: DJContent = {
     highlights: [
       { label: 'Formato', value: 'DJ Set + Speaker' },
       { label: 'Territorio', value: 'Andalucía · Extremadura · Castilla-La Mancha' },
-      { label: 'Cartel', value: 'Omar Montes · Henry Méndez · Xriz' },
     ],
   },
   socialLinks: [
