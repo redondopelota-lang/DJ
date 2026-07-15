@@ -63,10 +63,7 @@ function App() {
         socialLinks={djContent.socialLinks}
         footer={djContent.footer}
       />
-      <BackgroundAudio
-        src="/media/audio/baila-reggaeton.mp3"
-        title="Baila Reggaeton · Canelita · Antonio Guevara Live Edit"
-      />
+      <BackgroundAudio src="/media/audio/baila-reggaeton.mp3" />
     </div>
   )
 }
