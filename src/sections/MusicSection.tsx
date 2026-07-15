@@ -13,6 +13,7 @@ type MusicSectionProps = {
 export function MusicSection({ intro, sessions }: MusicSectionProps) {
   const featuredSession = sessions.find((session) => session.featured) ?? sessions[0]
   const remainingSessions = sessions.filter((session) => session.id !== featuredSession.id)
+  const spotifySession = sessions.find((session) => session.platform === 'Spotify')
 
   return (
     <section id="music" className="content-section">
@@ -58,6 +59,15 @@ export function MusicSection({ intro, sessions }: MusicSectionProps) {
                 />
               ))}
             </div>
+
+            {spotifySession?.links[0] ? (
+              <div className="music-featured__spotify-callout">
+                <p className="eyebrow">Spotify destacado</p>
+                <strong>{spotifySession.title}</strong>
+                <p>{spotifySession.description}</p>
+                <ButtonLink action={spotifySession.links[0]} variant="secondary" />
+              </div>
+            ) : null}
 
             {featuredSession.embedUrl ? (
               <div className="embed-frame">

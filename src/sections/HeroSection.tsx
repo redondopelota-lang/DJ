@@ -30,6 +30,7 @@ export function HeroSection({
   const heroSocialLinks = socialLinks.filter((link) =>
     ['instagram', 'soundcloud', 'spotify', 'whatsapp'].includes(link.platform),
   )
+  const spotifyLink = socialLinks.find((link) => link.platform === 'spotify')
   const backdropStyle = {
     ['--hero-background-position-mobile' as const]:
       hero.backgroundPositionMobile ?? hero.backgroundPosition ?? 'center',
@@ -79,6 +80,7 @@ export function HeroSection({
           >
             <ButtonLink action={hero.primaryAction} />
             <ButtonLink action={hero.secondaryAction} variant="secondary" />
+            {spotifyLink ? <ButtonLink action={spotifyLink} variant="secondary" /> : null}
           </motion.div>
           <motion.p
             className="hero-section__supporting"

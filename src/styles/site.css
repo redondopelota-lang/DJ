@@ -272,6 +272,27 @@
   margin-top: 2rem;
 }
 
+.music-featured__spotify-callout {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1.25rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.1rem;
+  background:
+    linear-gradient(180deg, rgba(30, 215, 96, 0.1), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.02);
+}
+
+.music-featured__spotify-callout strong {
+  font-size: 1.05rem;
+}
+
+.music-featured__spotify-callout .button-link {
+  width: fit-content;
+  margin-top: 0.15rem;
+}
+
 .button-link {
   display: inline-flex;
   align-items: center;
