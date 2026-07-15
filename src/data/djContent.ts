@@ -7,7 +7,7 @@ export const djContent: DJContent = {
       'Web oficial y presskit digital de Álvaro Redon. DJ / speaker con identidad urbana, open format, reggaetón y afro house para salas, ferias y eventos.',
     siteUrl: 'https://dj-bdf.pages.dev',
     canonicalUrl: 'https://dj-bdf.pages.dev',
-    ogImage: '/media/hero/alvaro-redon-banner.png',
+    ogImage: '/media/hero/alvaro-redon-hero-stage.jpg',
     twitterCard: 'summary_large_image',
     themeColor: '#ff2a4f',
   },
@@ -34,6 +34,7 @@ export const djContent: DJContent = {
       'Open format urbano, reggaetón y afro house para pistas que necesitan energía real.',
     backgroundImage: '/media/hero/alvaro-redon-hero-stage.jpg',
     backgroundPosition: '68% center',
+    backgroundPositionMobile: '60% center',
     backgroundAlt:
       'Álvaro Redon sobre el escenario, de espaldas frente a una gran multitud nocturna.',
     primaryAction: {

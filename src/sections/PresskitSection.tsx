@@ -85,6 +85,13 @@ export function PresskitSection({
               title="Branding"
               icon={<Type size={18} />}
             />
+            <div className="presskit-note">
+              <strong>Vídeos promocionales</strong>
+              <p>
+                Los vídeos promocionales pinchando están en el Drive público. Para acceder a
+                ellos, haz click en el enlace del bloque de documentos.
+              </p>
+            </div>
             <DownloadList
               items={presskit.documents}
               title="Documentos"

@@ -54,6 +54,7 @@ export interface HeroContent {
   claim: string
   backgroundImage: string
   backgroundPosition?: string
+  backgroundPositionMobile?: string
   backgroundAlt: string
   primaryAction: LinkAction
   secondaryAction: LinkAction

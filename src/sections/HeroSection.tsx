@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react'
+import type { MotionStyle } from 'framer-motion'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ArrowDownRight } from 'lucide-react'
 
@@ -28,19 +30,18 @@ export function HeroSection({
   const heroSocialLinks = socialLinks.filter((link) =>
     ['instagram', 'soundcloud', 'spotify', 'whatsapp'].includes(link.platform),
   )
+  const backdropStyle = {
+    ['--hero-background-position-mobile' as const]:
+      hero.backgroundPositionMobile ?? hero.backgroundPosition ?? 'center',
+    y: backgroundY,
+    scale: backgroundScale,
+    backgroundImage: `url(${hero.backgroundImage})`,
+    backgroundPosition: hero.backgroundPosition ?? 'center',
+  } as unknown as MotionStyle & CSSProperties
 
   return (
     <section id="home" className="hero-section">
-      <motion.div
-        className="hero-section__backdrop"
-        style={{
-          y: backgroundY,
-          scale: backgroundScale,
-          backgroundImage: `url(${hero.backgroundImage})`,
-          backgroundPosition: hero.backgroundPosition ?? 'center',
-        }}
-        aria-hidden="true"
-      />
+      <motion.div className="hero-section__backdrop" style={backdropStyle} aria-hidden="true" />
       <img className="sr-only" src={hero.backgroundImage} alt={hero.backgroundAlt} />
       <div className="hero-section__overlay" aria-hidden="true" />
 
