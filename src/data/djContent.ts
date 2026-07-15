@@ -32,9 +32,10 @@ export const djContent: DJContent = {
     kicker: 'Press kit 2026 / booking profile',
     claim:
       'DJ / speaker con identidad urbana, selección musical precisa y conexión directa con la pista.',
-    backgroundImage: '/media/hero/alvaro-redon-hero.jpg',
+    backgroundImage: '/media/hero/alvaro-redon-hero-stage.jpg',
+    backgroundPosition: '68% center',
     backgroundAlt:
-      'Álvaro Redon actuando frente a una gran pista con iluminación roja y azul.',
+      'Álvaro Redon sobre el escenario, de espaldas frente a una gran multitud nocturna.',
     primaryAction: {
       label: 'Descargar Presskit',
       href: '/media/presskit/Presskit_Alvaro_Redon.pdf',

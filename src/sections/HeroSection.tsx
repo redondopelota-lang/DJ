@@ -34,6 +34,7 @@ export function HeroSection({
           y: backgroundY,
           scale: backgroundScale,
           backgroundImage: `url(${hero.backgroundImage})`,
+          backgroundPosition: hero.backgroundPosition ?? 'center',
         }}
         aria-hidden="true"
       />

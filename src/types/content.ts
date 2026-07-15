@@ -53,6 +53,7 @@ export interface HeroContent {
   kicker: string
   claim: string
   backgroundImage: string
+  backgroundPosition?: string
   backgroundAlt: string
   primaryAction: LinkAction
   secondaryAction: LinkAction
